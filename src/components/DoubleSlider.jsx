@@ -4,17 +4,17 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const slidesTop = [
-  { id: "slide1", img: "public/assets/sliders-img/slider (1).jpg" },
-  { id: "slide2", img: "public/assets/sliders-img/slider (2).jpg" },
-  { id: "slide3", img: "public/assets/sliders-img/slider (3).jpg" },
-  { id: "slide4", img: "public/assets/sliders-img/slider (6).jpg" },
+  { id: "slide1", img: "/assets/sliders-img/slider (1).jpg" },
+  { id: "slide2", img: "/assets/sliders-img/slider (2).jpg" },
+  { id: "slide3", img: "/assets/sliders-img/slider (3).jpg" },
+  { id: "slide4", img: "/assets/sliders-img/slider (6).jpg" },
 ];
 
 const slidesBottom = [
-  { id: "slide4", img: "public/assets/sliders-img/slider (4).jpg" },
-  { id: "slide5", img: "public/assets/sliders-img/slider (5).jpg" },
-  { id: "slide6", img: "public/assets/sliders-img/slider (6).jpg" },
-  { id: "slide6", img: "public/assets/sliders-img/slider (2).jpg" },
+  { id: "slide4", img: "/assets/sliders-img/slider (4).jpg" },
+  { id: "slide5", img: "/assets/sliders-img/slider (5).jpg" },
+  { id: "slide6", img: "/assets/sliders-img/slider (6).jpg" },
+  { id: "slide6", img: "/assets/sliders-img/slider (2).jpg" },
 ];
 
 const DoubleSlider = () => {
