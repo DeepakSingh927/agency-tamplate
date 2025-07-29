@@ -14,13 +14,13 @@ const VideoSection = () => {
   return (
     <div
       className="relative w-full bg-cover bg-center py-10 px-4 flex items-center justify-center"
-      style={{ backgroundImage: "url('/src/assets/Container.png')" }} // change path to your actual image
+      style={{ backgroundImage: "url('public/assets/container.png')" }} // change path to your actual image
     >
       {/* Video Element Only */}
       <div className="relative w-full max-w-[1100px]">
         <video
           className="w-full h-[500px] object-cover rounded-xl shadow-xl"
-          src="/src/assets/mainvideo.mp4"
+          src="/public/assets/mainvideo.mp4"
           autoPlay
           loop
           playsInline

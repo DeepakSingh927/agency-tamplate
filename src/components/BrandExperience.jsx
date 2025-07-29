@@ -1,11 +1,11 @@
 import React from "react";
 
 const brandImages = [
-  "/src/assets/brands (1).png",
-  "/src/assets/brands (2).png",
-  "/src/assets/brands (3).png",
-  "/src/assets/brands (4).png",
-  "/src/assets/brands (5).png",
+  "public/assets/brands-1.png",
+  "public/assets/brands-2.png",
+  "public/assets/brands-3.png",
+  "public/assets/brands-4.png",
+  "public/assets/brands-5.png",
 ];
 
 const BrandExperience = () => {
