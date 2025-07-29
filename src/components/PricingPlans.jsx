@@ -13,7 +13,7 @@ export default function PricingPlans() {
       />
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center pt-10 mb-12">
           <h1 className="text-4xl font-bold text-gray-800 tracking-wider">
             CHOOSE THE RIGHT PLAN FOR YOU
           </h1>
@@ -219,11 +219,11 @@ export default function PricingPlans() {
                   Dedicated Account Manager
                 </span>
               </div>
-              <div className="flex items-center gap-3   rounded-lg p-1">
-                <div className="w-6 h-6 bg-lime-400 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Check className="w-4 h-4 text-gray-800" />
+              <div className="flex items-center gap-3 pb-10 rounded-lg p-1">
+                <div className="w-6 h-6 bg-lime-400 rounded-full flex items-center  justify-center flex-shrink-0">
+                  <Check className="w-4 h-4 text-gray-800  " />
                 </div>
-                <span className="text-sm font-medium text-gray-800">
+                <span className="text-sm font-medium  text-gray-800">
                   24/7 Premium Support
                 </span>
               </div>

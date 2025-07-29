@@ -12,7 +12,10 @@ const VideoSection = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center px-4 py-8 bg-white overflow-hidden">
+    <div
+      className="relative w-full bg-cover bg-center py-10 px-4 flex items-center justify-center"
+      style={{ backgroundImage: "url('/src/assets/Container.png')" }} // change path to your actual image
+    >
       {/* Video Element Only */}
       <div className="relative w-full max-w-[1100px]">
         <video

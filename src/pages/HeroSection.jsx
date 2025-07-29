@@ -3,8 +3,10 @@ import WhatWeDo from "../components/WhatWeDo";
 import VideoSection from "./VideoSection";
 import BrandExperience from "../components/BrandExperience";
 import PricingPlans from "../components/PricingPlans";
-import DoubleSlider from "../components/DoubleSlider"; 
+import DoubleSlider from "../components/DoubleSlider";
 import ControlledVideoSwiper from "../components/Testimonials";
+import FAQComponent from "../components/FAQComponent";
+import PixelNestFooter from "../components/Footer";
 
 export default function HeroSection() {
   return (
@@ -19,13 +21,13 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-gray-700 mt-8 text-lg sm:text-xl md:text-2xl max-w-[90%] sm:max-w-3xl mx-auto leading-relaxed text-center">
+          <p className="text-gray-900 mt-8 text-lg font-inter sm:text-xl md:text-2xl max-w-[90%] sm:max-w-3xl mx-auto leading-relaxed text-center">
             Growing a business is hard. We make it a whole lot easier, <br />
             more predictable, less stressful, and more fun.
           </p>
 
           {/* Input + Button */}
-          <div className="mt-8 sm:mt-12 px-4 w-full flex justify-center">
+          <div className="mt-8 sm:mt-12 px-4 w-full font-inter flex justify-center">
             <div className="flex w-full max-w-[90%] sm:max-w-2xl mx-auto rounded-full overflow-hidden">
               {/* Input Side */}
               <div className="flex flex-1 items-center bg-[#151515] px-4 sm:px-6 py-3 sm:py-4">
@@ -45,7 +47,7 @@ export default function HeroSection() {
           </div>
 
           {/* Stars + Reviews */}
-          <div className="mt-8 text-lg text-gray-600 flex justify-center items-center gap-2">
+          <div className="mt-8 text-lg text-gray-900 flex justify-center items-center gap-2">
             <div className="text-yellow-400 text-xl">★★★★★</div>
             <span>4.9 stars out of 6,273 reviews</span>
           </div>
@@ -57,6 +59,8 @@ export default function HeroSection() {
       <PricingPlans />
       <DoubleSlider />
       <ControlledVideoSwiper />
+      <FAQComponent />
+      <PixelNestFooter />
     </>
   );
 }

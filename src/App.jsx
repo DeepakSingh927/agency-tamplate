@@ -8,6 +8,8 @@ import BrandExperience from "./components/BrandExperience";
 import PricingPlans from "./components/PricingPlans";
 import DoubleSlider from "./components/DoubleSlider"; 
 import  ControlledVideoSwiper from "./components/Testimonials"; 
+import FAQComponent from "./components/FAQComponent";
+import PixelNestFooter from "./components/Footer";
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
         <Route path="/PricingPlans" element={<PricingPlans />} />
         <Route path="/doubleslider" element={<DoubleSlider />} />
         <Route path="/controlledvideoswiper" element={< ControlledVideoSwiper />} />
+        <Route path="/faqcomponent" element={<FAQComponent />} />
+        <Route path="/ pixelnestfooter" element={< PixelNestFooter />} />
 
+ 
 
 
 

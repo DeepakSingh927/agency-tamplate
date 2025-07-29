@@ -10,7 +10,7 @@ const WhatWeDo = () => {
         "Craft high-performance Shopify stores that boost your sales and turn visitors into loyal customers",
       icon: <FaShopify size={28} />,
       bg: "bg-[#EEEEEE] text-black",
-      hover: "hover:bg-black hover:text-lime-300",
+      hover: "hover:bg-black  hover:text-lime-300",
     },
     {
       title: "WordPress Development",
@@ -31,9 +31,9 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section className="w-full py-16 bg-gradient-to-b from-white via-lime-40 to-white px-6">
+    <section className="w-full py-16 bg-gradient-to-b from-white via-lime-40 to-white px-4">
       <div className="max-w-screen-xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-wider mb-10 text-black">
+        <h2 className="text-2xl md:text-3xl font-semibold font-inter tracking-wider mb-10 text-black">
           WHAT WE DO
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
