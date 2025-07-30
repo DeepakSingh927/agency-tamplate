@@ -6,7 +6,7 @@ export default function PricingPlans() {
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100  px-4 relative">
       {/* Background Image: above green bg, below cards */}
       <img
-        src="/src/assets/Container.png"
+        src="/assets/Container.png"
         alt=""
         className="pointer-events-none select-none absolute top-0 left-0 w-full h-full object-cover opacity-90 z-0"
         aria-hidden="true"
