@@ -1,3 +1,7 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { motion } from "framer-motion";
+
 import Navbar from "../components/Navbar";
 import WhatWeDo from "../components/WhatWeDo";
 import VideoSection from "./VideoSection";
@@ -9,21 +13,45 @@ import FAQComponent from "../components/FAQComponent";
 import PixelNestFooter from "../components/Footer";
 
 export default function HeroSection() {
+  const headingRef = useRef(null);
+  const subheadingRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    tl.fromTo(
+      headingRef.current,
+      { y: -90, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5 }
+    ).fromTo(
+      subheadingRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1 },
+      "-=0.5" // overlap animation
+    );
+  }, []);
   return (
     <>
       <Navbar />
       <section className="bg-white text-center px-4 pt-10 md:pt-20 pb-0 md:pb-0">
         <div className="w-full max-w-6xl mx-auto">
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold font-inter text-black leading-tight md:leading-[1.2]">
-            WE CREATE FAST & POWERFUL <br />
+          <h1
+            ref={headingRef}
+            className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-inter text-black leading-tight md:leading-[1.1]"
+          >
+            WE CREATE <span className="text-lime-400">FAST & POWERFUL</span>
+            <br />
             WEBSITES FOR AGENCY
           </h1>
 
           {/* Subheading */}
-          <p className="text-gray-900 mt-8 text-lg font-inter sm:text-xl md:text-2xl max-w-[90%] sm:max-w-3xl mx-auto leading-relaxed text-center">
-            Growing a business is hard. We make it a whole lot easier, <br />
-            more predictable, less stressful, and more fun.
+          <p
+            ref={subheadingRef}
+            className="text-gray-900 mt-6 md:mt-8 text-lg md:text-2xl font-inter max-w-3xl mx-auto leading-relaxed"
+          >
+            Growing a business is hard. We make it easier, more predictable,
+            less stressful—and actually fun.
           </p>
 
           {/* Input + Button */}

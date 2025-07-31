@@ -9,7 +9,8 @@ import PricingPlans from "./components/PricingPlans";
 import DoubleSlider from "./components/DoubleSlider";
 import ControlledVideoSwiper from "./components/Testimonials";
 import FAQComponent from "./components/FAQComponent";
-import PixelNestFooter from "./components/Footer";
+import PixelNestFooter from "./components/Footer"; 
+
 
 function App() {
   return (
